@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Supplies - Trendy Picks</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Header -->
+  <header class="bg-green-500 text-white py-4 shadow-md">
+    <div class="container mx-auto text-center">
+      <h1 class="text-3xl font-bold">🐾 Pet Supplies - Trendy Picks</h1>
+      <p class="mt-1">Curated pet products with best deals | Affiliate Links</p>
+    </div>
+  </header>
+
+  <!-- Search Bar -->
+  <div class="container mx-auto mt-6">
+    <input type="text" id="searchInput" placeholder="Search products..." class="w-full p-3 border rounded shadow">
+  </div>
+
+  <!-- Product Grid -->
+  <div class="container mx-auto mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="productGrid">
+
+    <!-- Product Item 1 -->
+    <div class="product bg-white p-4 rounded shadow hover:shadow-lg transition">
+      <img src="https://via.placeholder.com/200x150" alt="Dog Chew Toy" class="w-full h-40 object-cover rounded">
+      <h2 class="text-lg font-semibold mt-2">Dog Chew Toy</h2>
+      <p class="text-gray-600 mt-1">Keeps your dog busy & active</p>
+      <div class="mt-3 space-x-2">
+        <a href="https://www.amazon.in/dp/example?tag=your-affiliate-tag" target="_blank" class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Buy on Amazon</a>
+        <a href="https://www.flipkart.com/example?affid=your-affiliate-id" target="_blank" class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Buy on Flipkart</a>
+      </div>
+    </div>
+
+    <!-- Product Item 2 -->
+    <div class="product bg-white p-4 rounded shadow hover:shadow-lg transition">
+      <img src="https://via.placeholder.com/200x150" alt="Pet Grooming Brush" class="w-full h-40 object-cover rounded">
+      <h2 class="text-lg font-semibold mt-2">Pet Grooming Brush</h2>
+      <p class="text-gray-600 mt-1">Quick grooming for dogs & cats</p>
+      <div class="mt-3 space-x-2">
+        <a href="https://www.amazon.in/dp/example2?tag=your-affiliate-tag" target="_blank" class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Buy on Amazon</a>
+        <a href="https://www.flipkart.com/example2?affid=your-affiliate-id" target="_blank" class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Buy on Flipkart</a>
+      </div>
+    </div>
+
+    <!-- Product Item 3 -->
+    <div class="product bg-white p-4 rounded shadow hover:shadow-lg transition">
+      <img src="https://via.placeholder.com/200x150" alt="Cat Litter Box" class="w-full h-40 object-cover rounded">
+      <h2 class="text-lg font-semibold mt-2">Cat Litter Box</h2>
+      <p class="text-gray-600 mt-1">Easy cleaning & odor control</p>
+      <div class="mt-3 space-x-2">
+        <a href="https://www.amazon.in/dp/example3?tag=your-affiliate-tag" target="_blank" class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Buy on Amazon</a>
+        <a href="https://www.flipkart.com/example3?affid=your-affiliate-id" target="_blank" class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Buy on Flipkart</a>
+      </div>
+    </div>
+
+    <!-- Add more products here following the same structure -->
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-10">
+    <div class="container mx-auto text-center">
+      <p>Affiliate links – I may earn from qualifying purchases.</p>
+      <p>© 2025 Your Brand Name</p>
+    </div>
+  </footer>
+
+  <!-- Search Script -->
+  <script>
+    const input = document.getElementById('searchInput');
+    input.addEventListener('keyup', function() {
+      const filter = input.value.toLowerCase();
+      document.querySelectorAll('#productGrid .product').forEach(item => {
+        item.style.display = item.textContent.toLowerCase().includes(filter) ? '' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>
