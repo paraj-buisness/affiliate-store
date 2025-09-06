@@ -1,0 +1,27 @@
+[
+  {
+    "id": "dog-chew-toy",
+    "category": "pets",
+    "title": "Dog Chew Toy",
+    "description": "Durable chew toy for dogs to stay active and happy.",
+    "image": "https://m.media-amazon.com/images/I/71dDogToy.jpg",
+    "amazon": "https://www.amazon.in/dp/example1?tag=your-affiliate-id",
+    "flipkart": "https://www.flipkart.com/example1?affid=your-affiliate-id"
+  },
+  {
+    "id": "cat-litter-box",
+    "category": "pets",
+    "title": "Cat Litter Box",
+    "description": "Easy-to-clean litter box with odor control.",
+    "image": "https://m.media-amazon.com/images/I/71cCatBox.jpg",
+    "amazon": "https://www.amazon.in/dp/example2?tag=your-affiliate-id"
+  },
+  {
+    "id": "bamboo-toothbrush",
+    "category": "eco",
+    "title": "Bamboo Toothbrush",
+    "description": "Eco-friendly toothbrush made from natural bamboo.",
+    "image": "https://m.media-amazon.com/images/I/71bBamboo.jpg",
+    "amazon": "https://www.amazon.in/dp/example3?tag=your-affiliate-id"
+  }
+]
