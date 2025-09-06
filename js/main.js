@@ -1,6 +1,8 @@
 // Load products.json
 async function fetchProducts() {
-  const response = await fetch("/products.json");
+  // Detect correct path (works from index, niche, or product page)
+  let path = window.location.pathname.includes("niches") ? "../products.json" : "products.json";
+  const response = await fetch(path);
   return await response.json();
 }
 
